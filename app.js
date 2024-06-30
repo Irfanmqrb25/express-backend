@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import errorController from "./controllers/errorController.js";
 
 const corsOption = {
-  origin: "https://express-backend-gamma.vercel.app",
+  origin: "http://localhost:5173",
 };
 
 dotenv.config({ path: "./config.env" });
