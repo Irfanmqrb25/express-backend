@@ -6,8 +6,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "SET NODE_ENV=DEVELOPMENT&&nodemon backend/app.js",
-    "prod": "SET NODE_ENV=PRODUCTION&&nodemon backend/app.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT&&nodemon ./app.js",
+    "prod": "SET NODE_ENV=PRODUCTION&&nodemon ./app.js",
     "seeder": "node seeder/seeder.js"
   },
   "author": "twennys",
@@ -18,7 +18,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "debug": "^4.3.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
