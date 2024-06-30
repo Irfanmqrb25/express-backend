@@ -1,0 +1,26 @@
+{
+  "name": "twennys-shop",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Ecommerce App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT&&nodemon backend/app.js",
+    "prod": "SET NODE_ENV=PRODUCTION&&nodemon backend/app.js",
+    "seeder": "node seeder/seeder.js"
+  },
+  "author": "twennys",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
