@@ -17,7 +17,7 @@ app.use(cors(corsOption));
 const DB = process.env.DB;
 
 mongoose.connect(DB).then((con) => {
-  console.log(`MongoDB Database connected with HOST: ${con?.connection?.host}`);
+  console.log(`MongoDB Database connected with HOST: ${con.connection.host}`);
 });
 
 app.use(express.json());

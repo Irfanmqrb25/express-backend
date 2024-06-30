@@ -56,9 +56,10 @@ export default (err, req, res, next) => {
   err.status = err.status || 'error'
 
   if(process.env.NODE_ENV === 'DEVELOPMENT') {
-    if(err instanceof CastError) err = handleCastError(err)
+    let error = {...err}
+    if(err instanceof CastError) error = handleCastError(error)
 
-    sendErrorDev(err, res)
+    sendErrorDev(error, res)
     
   } else if(process.env.NODE_ENV === 'PRODUCTION'){
     let error = {...err}

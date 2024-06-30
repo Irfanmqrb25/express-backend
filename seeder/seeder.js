@@ -4,7 +4,7 @@ import Product from "../model/productModel.js";
 
 const seedProducts = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/twennys");
+    await mongoose.connect("mongodb+srv://farhansf2002:cka2y9DYOxdUvOfZ@twennyscluster.qkj9cdv.mongodb.net/twennys?retryWrites=true&w=majority&appName=TwennysCluster");
 
     await Product.deleteMany();
     console.log("Products are deleted");
